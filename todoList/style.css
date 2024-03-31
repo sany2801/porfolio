@@ -1,0 +1,138 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Myfonts';
+}
+.wrapper{
+    width: 90%;
+    background-color: antiquewhite;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 40px;
+}
+.wrapper__card{
+    display: flex;
+    background-color: rgb(35, 220, 161);
+
+}
+.wrapper__card div, h3{
+    width: 100%;
+}
+.title__card{
+    display: flex;
+}
+.todo__wrapper{
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0;
+    width: 100%;
+}
+.deleted__card{
+    text-decoration:line-through;
+    font-style: italic;
+    border-left: 5px solid black;
+}
+.deleted__card button, .comleted__card .card .btn-edit{
+    display: none;
+}
+.deleted__card .card-text{
+    background-color: red ;
+}
+.progres__card, .comleted__card, .deleted__card{
+    padding:0 0.5rem;
+    overflow:auto;
+    margin: 0 auto;
+    height: 500px;
+}
+.progres__card{
+    border-right: 5px solid black;
+}
+.comleted__card .btn-cmpl{
+    display: none;
+}
+.comleted__card .card-text{
+    background-color: rgb(106, 106, 184);
+    font-style: italic;
+}
+.delet__todo, .add__todo{
+    font-size: 25px;
+    border: none;
+    background-color: rgb(175, 255, 96);
+    padding: 1rem;
+    font-weight: 600;
+    width: 100%;
+    cursor: pointer;
+}
+.input__todo{
+    font-size: 30px;
+}
+.list-card{
+    display: flex;
+    cursor: all-scroll;
+    margin: 0.5rem 0;
+}
+.btn-card{
+    font-size: 20px;
+    padding: 0.5rem;
+}
+.card-text{
+    font-size: 30px;
+    font-weight: 900;
+    /* background-color: black; */
+    background-color:  rgb(179, 255, 0);
+    color: rgb(0, 0, 0);
+    padding: 1rem ;
+    width: 80%;
+    text-align: center;
+}
+
+
+.popap-edit{
+    position:absolute;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.462);
+    display: none;
+}
+.input-section{
+    position: relative;
+    width: 500px;
+    height: 200px;
+    background-color: rgb(242, 242, 242);
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 200px;
+}
+.input-edit{
+    height: 50px;
+    width: 70%;
+    font-size: 30px;
+}
+.btn-save{
+    width: 20%;
+    height: 50px;
+    background-color: rgb(28, 124, 13);
+    border: none;
+}
+.btn-close{
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    font-size: 20px;
+    border-radius: 20%;
+    width: 30px;
+    height: 30px;
+}
+.hiden{
+    display:none;
+}
+.hovered{
+    background-color: rgba(0, 0, 0, 0.286);
+}

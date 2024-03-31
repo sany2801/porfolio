@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <div class="wrapper">
+            <div class="logo"></div>
+            <ul class="nav-header">
+                <li>
+                    <a href="#">Работы</a>
+                </li>
+                <li>
+                    <a href="#">Наша команда</a>
+                </li>
+                <li>
+                    <a href="#">Отзывы</a>
+                </li>
+                <li>
+                    <a href="#">Контакты</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <div class="main-section">
+            <div class="main-tittle">
+                <h1>Создаём кухни с индивидуальным дизайном</h1>
+                <p class="discription">Создадим, доставим и установим Вашу уникальную кухню с гарантией до 24 месяцев
+                </p>
+                <button class="main-button">Рассчитать стоимость</button>
+            </div>
+            <div class="main-photo"></div>
+        </div>
+    </main>
+
+
+    <!--============ Наши преимущества ========= -->
+
+
+    <div class="advantages">
+        <div class="wrapper">
+            <h2>Наши преимущества</h2>
+        </div>
+        <div class="advantages-section">
+            <div class="advantages-photo"></div>
+            <div class="advantages-list">
+                <div>
+                    <p>01</p>
+                    <p>Надежность и качество</p>
+                    <p>Расширенная гарантия,
+                        3 уровня контроля качества,
+                        сборщики с опытом от 10 лет.</p>
+                </div>
+                <div>
+                    <p>02</p>
+                    <p>Надежность и качество</p>
+                    <p>Расширенная гарантия,
+                        3 уровня контроля качества,
+                        сборщики с опытом от 10 лет.</p>
+                </div>
+                <div>
+                    <p>03</p>
+                    <p>Надежность и качество</p>
+                    <p>Расширенная гарантия,
+                        3 уровня контроля качества,
+                        сборщики с опытом от 10 лет.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="wrapper">
+        <div class="form-section">
+            <h2>Расчет стоимости </h2>
+
+            <form action="POST" class="calculator" id="form" name="">
+                <h3>Форма кухни</h3>
+                <div>
+                    <div class="the_form">
+
+                        <div class="types island">
+                            <input class="type-kitchen" type="radio" name="form_kitch" value="С островом" id="island"
+                                checked>
+                            <label class="label_input" for="island"></label>
+                            <p>С островом</p>
+                        </div>
+
+                        <div class="types angular">
+                            <input class="type-kitchen" type="radio" name="form_kitch" value="Угловая" id="angular">
+                            <label class="label_input" for="angular"></label>
+                            <p>Угловая</p>
+                        </div>
+
+                        <div class="types straight">
+                            <input class="type-kitchen" type="radio" name="form_kitch" value="Прямая" id="straight">
+                            <label class="label_input" for="straight"></label>
+                            <p>Прямая</p>
+                        </div>
+
+                        <div class="types bar">
+                            <input class="type-kitchen" type="radio" name="form_kitch" value="С барной стойкой"
+                                id="bar">
+                            <label class="label_input" for="bar"></label>
+                            <p>С барной стойкой</p>
+                        </div>
+                    </div>
+                </div>
+                <h3>Материал фасада</h3>
+                <div>
+                    <div class="the_form">
+                        <div class="types ldsp">
+                            <input class="type-kitchen" type="radio" name="material_facade" value="ЛДСП" id="ldsp"
+                                checked>
+                            <label class="label_input" for="ldsp"></label>
+                            <p>ЛДСП</p>
+                        </div>
+                        <div class="types array">
+                            <input class="type-kitchen" type="radio" name="material_facade" value="Массив" id="array">
+                            <label class="label_input" for="array"></label>
+                            <p>Массив</p>
+                        </div>
+
+                        <div class="types plastic">
+                            <input class="type-kitchen" type="radio" name="material_facade" value="Пластик"
+                                id="plastic">
+                            <label class="label_input" for="plastic"></label>
+                            <p>Пластик</p>
+                        </div>
+
+                        <div class="types veneer">
+                            <input class="type-kitchen" type="radio" name="material_facade" value="Шпон" id="veneer">
+                            <label class="label_input" for="veneer"></label>
+                            <p>Шпон</p>
+                        </div>
+
+                        <div class="types acrylic">
+                            <input class="type-kitchen" type="radio" name="material_facade" value="Акрил" id="acrylic">
+                            <label class="label_input" for="acrylic"></label>
+                            <p>Акрил</p>
+                        </div>
+                    </div>
+                </div>
+
+                <h3>Материал столешницы</h3>
+                <div>
+                    <div class="the_form">
+                        <div class="types wooden">
+                            <input class="type-kitchen" type="radio" name="countertop_material" value="Деревянная"
+                                id="wooden" checked>
+                            <label class="label_input" for="wooden"></label>
+                            <p>Деревянная</p>
+                        </div>
+                        <div class="types artificial_stone">
+                            <input class="type-kitchen" type="radio" name="countertop_material"
+                                value="Искуственный камень" id="artificial_stone">
+                            <label class="label_input" for="artificial_stone"></label>
+                            <p>Искуственный камень</p>
+                        </div>
+
+                        <div class="types natural_stone">
+                            <input class="type-kitchen" type="radio" name="countertop_material"
+                                value="Натуральный камень" id="natural_stone">
+                            <label class="label_input" for="natural_stone"></label>
+                            <p>Натуральный камень</p>
+                        </div>
+
+                        <div class="types postforming">
+                            <input class="type-kitchen" type="radio" name="countertop_material" value="Постформинг"
+                                id="postforming">
+                            <label class="label_input" for="postforming"></label>
+                            <p>Постформинг</p>
+                        </div>
+
+                        <div class="types glass">
+                            <input class="type-kitchen" type="radio" name="countertop_material" value="Стеклянная"
+                                id="glass">
+                            <label class="label_input" for="glass"></label>
+                            <p>Стеклянная</p>
+                        </div>
+                    </div>
+                </div>
+                <h3>Фурнитура</h3>
+                <div class="the_form">
+                    <div class="types-fittings">
+                        <input class="type-kitchen" type="radio" name="accessories" value="Эконом" id="economy" checked>
+                        <label class="label_input-fittings" for="economy">Эконом</label>
+                    </div>
+                    <div class="types-fittings">
+                        <input class="type-kitchen" type="radio" name="accessories" value="Стандарт" id="standard">
+                        <label class="label_input-fittings" for="standard">Стандарт</label>
+                    </div>
+                    <div class="types-fittings">
+                        <input class="type-kitchen" type="radio" name="accessories" value="Премиум" id="premium">
+                        <label class="label_input-fittings" for="premium">Премиум</label>
+                    </div>
+                </div>
+                <h3>Размер кухни</h3>
+                <div class="the_form">
+
+                    <fieldset class="size_form">
+                        <legend class="tittle_input">Длина кухни</legend>
+                        <input class="input_size" name="width_kitch" type="number" placeholder="Длина кухни">
+                    </fieldset>
+                    <fieldset class="size_form">
+                        <legend class="tittle_input">Длина (Левый угол)(м2)</legend>
+                        <input class="input_size" name="width_kitch-left" type="number"
+                            placeholder="Длина (Левый угол)(м2)">
+                    </fieldset>
+                    <fieldset class="size_form">
+                        <legend class="tittle_input">Длина (Правый угол)(м2)</legend>
+                        <input class="input_size" name="width_kitch-right" type="number"
+                            placeholder="Длина (Правый угол)(м2)">
+                    </fieldset>
+                </div>
+                <h3>Ваши контакты</h3>
+                <div class="the_form">
+                    <fieldset class="size_form">
+                        <legend class="tittle_input">Имя</legend>
+                        <input class="input_size" name="user_name" type="text" placeholder="Имя">
+                    </fieldset>
+                    <fieldset class="size_form">
+                        <legend class="tittle_input">Телефон</legend>
+                        <input class="input_size" name="user_phone" type="tel" placeholder="Телефон" id="phone">
+                    </fieldset>
+                </div>
+                <button type="submit" class="main-button">Рассчитать стоимость</button>
+
+            </form>
+        </div>
+    </div>
+    <div class="wrapper-popap">
+
+        <div class="wrapper_sending">
+            <div class="sending">
+                <p class="tittle-send">Идёт расчёт стоимости</p>
+                <p class="discription-send">C вами свяжутся через некоторое время </p>
+                <button class="close_send">❌</button>
+            </div>
+        </div>
+    </div>
+    <div class="wrapper">
+        <h2>Процесс создания проекта</h2>
+        <div class="process_section">
+            <div class="design">
+                <p>01</p>
+                <p>Дизайн</p>
+            </div>
+            <div class="measurement">
+                <p>02</p>
+                <p>Замер</p>
+            </div>
+            <div class="зd_project">
+                <p>03</p>
+                <p>3D-проект</p>
+            </div>
+            <div class="creation">
+                <p>04</p>
+                <p>Создание</p>
+            </div>
+            <div class="assembly">
+                <p>05</p>
+                <p>Сборка</p>
+            </div>
+            <div class="delivery">
+                <p>06</p>
+                <p>Доставка</p>
+            </div>
+            <div class="installation">
+                <p>07</p>
+                <p>Установка</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="wrapper">
+        <h3>Наши работы</h3>
+    </div>
+
+    <div class="wrapper-slider">
+        <div class="line-slider">
+            <div class="slide">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="slide">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <button class="nav-slide prev">❮</button>
+            </div>
+            <div class="slide">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <button class="nav-slide next">❯</button>
+            </div>
+            <div class="slide">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="wrapper">
+        <h3>Наша команда</h3>
+    </div>
+
+    <div class="team-wrapper wrapper">
+        <div class="director">
+            <div class="fhoto-team"></div>
+            <p class="job-tittle">Директор</p>
+            <p class="name-team">Максим Максимович </p>
+        </div>
+        <div class="director">
+            <div class="fhoto-team"></div>
+            <p class="job-tittle">Директор</p>
+            <p class="name-team">Максим Максимович </p>
+        </div>
+        <div class="director">
+            <div class="fhoto-team"></div>
+            <p class="job-tittle">Директор</p>
+            <p class="name-team">Максим Максимович </p>
+        </div>
+        <div class="director">
+            <div class="fhoto-team"></div>
+            <p class="job-tittle">Директор</p>
+            <p class="name-team">Максим Максимович </p>
+        </div>
+        <div class="director">
+            <div class="fhoto-team"></div>
+            <p class="job-tittle">Директор</p>
+            <p class="name-team">Максим Максимович </p>
+        </div>
+        <div class="director">
+            <div class="fhoto-team"></div>
+            <p class="job-tittle">Директор</p>
+            <p class="name-team">Максим Максимович </p>
+        </div>
+    </div>
+
+    <div class="wrapper">
+        <h3>Бесплатная консультация</h3>
+        <div class="form_consultation">
+            <form action="" class="form">
+                <fieldset class="size_form">
+                    <legend class="tittle_input">Имя</legend>
+                    <input class="input_name" type="text" placeholder="Имя" name="user_name">
+                </fieldset>
+                <fieldset class="size_form">
+                    <legend class="tittle_input">Телефон</legend>
+                    <input class="input_phone" type="tel" placeholder="Телефон" name="user_phone">
+                </fieldset>
+                <fieldset class="offer__input">
+                    <input type="checkbox" name="offer__input" id="offer__input" class="public-offer__input">
+                    <label for="offer__input" class="public-offer">
+                        Я ознакомился с существенными условиями
+                        договора публичной оферты
+                    </label>
+                </fieldset>
+                <button type="submit" class="sbmt__consultation">Позвонить мне</button>
+            </form>
+            <div class="bg_consultation"></div>
+        </div>
+    </div>
+    <footer>
+        <div class="wrapper footer_wrapper">
+            <ul class="nav-footer">
+                <li>
+                    <a href="#">Работы</a>
+                </li>
+                <li>
+                    <a href="#">Наша команда</a>
+                </li>
+                <li>
+                    <a href="#">Отзывы</a>
+                </li>
+                <li>
+                    <a href="#">Контакты</a>
+                </li>
+            </ul>
+            <div class="logo__footer"></div>
+            <div class="address">
+                <h5>Адрес</h5>
+                <p>Москва ул. Маяковского 99</p>
+                <h5>Время работы</h5>
+                <p>9.00-20.00</p>
+            </div>
+            <div class="contact">
+                <h5>Телефон</h5>
+                <p>+7 (999) 999-99-99</p>
+                <h5>Email</h5>
+                <p>aeox.kitchen@mail.ru</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>

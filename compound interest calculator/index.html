@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="wrapeer">
+        <form class="calc" action="">
+            <p>Сумма первоначального взноса</p>
+            <input class="input downPayment" type="number" value="100">
+            <p>Сумма пополнения
+            </p>
+            <input class="input replenishment" type="number" value="100">
+            <p>Процентная ставка</p>
+            <input class="input interestRate " type="number" value="12">
+            <p>Срок депозита в месяцах</p>
+            <input class="input term" type="number" value="12">
+            <br>
+            <input class="submit" type="submit" value="Рассчитать">
+        </form>
+        <div class="chart">
+            <div class="totalAmount">
+                <p class="title totalTittle">Итоrовый баланс</p>
+                <p class="totalValue">0</p>
+            </div>
+            <div class="chartProcent">
+                <div class="replenishmentAmount">
+                    <p class="title replenishmentTittle">Всего пополнений</p>
+                    <p class="replenishmentValue">0</p>
+                </div>
+                <div class="interestAmount">
+                    <p class="title interestTittle"> Сумма процентов </p>
+                    <p class="interestValue">0</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <table class="tableTiitle">
+        <tr>
+            <td>месяц</td>
+            <td>Сумма</td>
+        </tr>
+    </table>
+    <table class="tableResult">
+    </table>
+
+
+
+
+</body>
+<script src="script.js"></script>
+
+</html>

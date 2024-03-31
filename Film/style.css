@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800&display=swap');
+*{
+    margin: 0;
+    box-sizing: border-box;
+    /* border: 1px solid rgb(255, 255, 255); */
+    font-family: 'Raleway', sans-serif;
+
+}
+ul{
+    list-style: none;
+    padding: 0;
+}
+
+:root{
+    --grad: linear-gradient(rgba(29, 38, 46, 0.5), rgba(29, 38, 46, 0.5));
+}
+body{
+    height: 100vh;
+    background-color: #413b3b;
+}
+.wrapper{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+.navigator{
+    background-color: transparent;
+    font-size: 60px;
+    position: absolute;
+    color: aliceblue;
+    border: none;
+
+}
+.close{
+   position: absolute;
+   font-size: 70px;
+   padding: 0;
+   width: 60px;
+   height: 60px;
+   z-index: 2;
+   top: 20px;
+   display: none;
+   background:none;
+    border: none;
+}
+.close div{
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: rgb(255, 255, 255);
+}
+.close div:nth-child(1){
+    transform: rotate(45deg);
+}
+.close div:nth-child(2){
+    transform: rotate(-45deg);
+
+}
+.next{
+    right: 0;
+}
+.content{
+    width: 25%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    transition: all ease 1s;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+}
+.content::after{
+    content: "";
+    color: aliceblue;
+    bottom: 10px;
+    left: 10px;
+    font-size: 60px;
+    font-family: 'Montserrat', sans-serif;
+    position: absolute;
+}
+.content::before{
+    content: "";
+    width: 100%;
+    min-width: 250px;
+    color: aliceblue;
+    font-size:20px;
+    position: absolute;
+    bottom: 30px;
+    right: -90%;
+    transform-origin: 0 100%;
+    transform: rotate(-90deg);
+    font-family: 'Oswald', sans-serif;
+    /* border: 1px solid rgb(170, 255, 0); */
+
+}
+.jocker{
+    background-image: var(--grad),
+    url(images/Joker-7.jpg);
+}
+.jocker::after{
+    content: "01";
+}
+.jocker::before{
+    content: "✦ Jocker";
+}
+.jocker:hover{
+    background-image: 
+    url(images/Joker-7.jpg);
+}
+
+.johnWick{
+    background-image: var(--grad), 
+    url(images/John-Wick.jpg);
+}
+.johnWick::after{
+    content: "02";
+}
+.johnWick::before{
+    content: "✦ John Wick";
+}
+.johnWick:hover{
+    background-image:url(images/John-Wick.jpg);
+}
+.helboy{
+    background-image: 
+    var(--grad), 
+    url(images/Hellboy.jpg);
+}
+.helboy::after{
+    content: "03";
+}
+.helboy::before{
+    content: "✦ HellBoy";
+}
+.helboy:hover{
+    background-image: url(images/Hellboy.jpg);
+}
+.starwars{
+    background-image: 
+    var(--grad), 
+    url(images/starwars.jpg);
+}
+.starwars::after{
+    content: "04";
+}
+.starwars::before{
+    content: "✦ Star Wars";
+}
+.starwars:hover{
+    background-image: url(images/starwars.jpg);
+}
+.content:hover{
+    width: 35%;
+}
+
+.active{
+    width: 200%;
+    background-position: right;    
+}
+
+.active  .discriptionFilm{
+    display: block;
+}
+.active:hover{
+    width: 200%;
+}
+
+.discriptionFilm{
+    padding-top: 3rem;
+    width: 50%;
+    color: white;
+    display: none;
+}
+.tittle{
+    font-size: 90px;
+    margin-bottom: 1rem;
+}
+.grade{
+    display: flex;
+    margin: 1.5rem 0; 
+}
+.grade li{
+    font-size: 40px;
+    margin: 0 10px;
+}
+.grade li:nth-child(-n+4){
+    color: yellow;
+}
+
+.discriptionTittle{
+    font-size: 18px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-bottom: 3rem;
+    color: #d6cece;
+    font-weight: 700;
+}
+.details div{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+    font-size: 16px;
+}
+.details li{
+    margin: 1rem;
+}
+.active:nth-child(1){
+    background-image: 
+    url(images/Joker-7.jpg);
+} .active:nth-child(2){
+    background-image: 
+    url(images/John-Wick.jpg);
+} .active:nth-child(3){
+    background-image: 
+    url(images/Hellboy.jpg);
+} .active:nth-child(4){
+    background-image: 
+    url(images/starwars.jpg);
+}
+
+.active .close{
+    display: block;
+}

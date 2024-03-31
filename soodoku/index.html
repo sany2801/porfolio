@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <h1>SUDOKU</h1>
+    <ul class="level">
+      <div>
+        <span>Уровень:</span>
+        <li><a href="#" class="difficulty_level easy">Лёгкий</a></li>
+        <li><a href="#" class="difficulty_level medium">Средний</a></li>
+        <li><a href="#" class="difficulty_level hard">Тяжёлый</a></li>
+      </div>
+      <div class="timer">
+        <span>Таймер</span>
+        <span class="hours">00</span>
+        <span>:</span>
+        <span class="minute">00</span>
+        <span>:</span>
+        <span class="seconds">00</span>
+        <div class="cotrolTimer">
+          <button class="play">▶️</button>
+          <button class="pause">⏸️</button>
+        </div>
+      </div>
+    </ul>
+    <div class="wrapper">
+      <div class="game_field">
+        <div class="section" id="1">
+          <div class="num_section sq_1 ln_1"></div>
+          <div class="num_section sq_1 ln_2"></div>
+          <div class="num_section sq_1 ln_3"></div>
+          <div class="num_section sq_2 ln_4"></div>
+          <div class="num_section sq_2 ln_5"></div>
+          <div class="num_section sq_2 ln_6"></div>
+          <div class="num_section sq_3 ln_7"></div>
+          <div class="num_section sq_3 ln_8"></div>
+          <div class="num_section sq_3 ln_9"></div>
+        </div>
+        <div class="section" id="2">
+          <div class="num_section sq_1 ln_1"></div>
+          <div class="num_section sq_1 ln_2"></div>
+          <div class="num_section sq_1 ln_3"></div>
+          <div class="num_section sq_2 ln_4"></div>
+          <div class="num_section sq_2 ln_5"></div>
+          <div class="num_section sq_2 ln_6"></div>
+          <div class="num_section sq_3 ln_7"></div>
+          <div class="num_section sq_3 ln_8"></div>
+          <div class="num_section sq_3 ln_9"></div>
+        </div>
+        <div class="section" id="3">
+          <div class="num_section sq_1 ln_1"></div>
+          <div class="num_section sq_1 ln_2"></div>
+          <div class="num_section sq_1 ln_3"></div>
+          <div class="num_section sq_2 ln_4"></div>
+          <div class="num_section sq_2 ln_5"></div>
+          <div class="num_section sq_2 ln_6"></div>
+          <div class="num_section sq_3 ln_7"></div>
+          <div class="num_section sq_3 ln_8"></div>
+          <div class="num_section sq_3 ln_9"></div>
+        </div>
+        <div class="section" id="4">
+          <div class="num_section sq_4 ln_1"></div>
+          <div class="num_section sq_4 ln_2"></div>
+          <div class="num_section sq_4 ln_3"></div>
+          <div class="num_section sq_5 ln_4"></div>
+          <div class="num_section sq_5 ln_5"></div>
+          <div class="num_section sq_5 ln_6"></div>
+          <div class="num_section sq_6 ln_7"></div>
+          <div class="num_section sq_6 ln_8"></div>
+          <div class="num_section sq_6 ln_9"></div>
+        </div>
+        <div class="section" id="5">
+          <div class="num_section sq_4 ln_1"></div>
+          <div class="num_section sq_4 ln_2"></div>
+          <div class="num_section sq_4 ln_3"></div>
+          <div class="num_section sq_5 ln_4"></div>
+          <div class="num_section sq_5 ln_5"></div>
+          <div class="num_section sq_5 ln_6"></div>
+          <div class="num_section sq_6 ln_7"></div>
+          <div class="num_section sq_6 ln_8"></div>
+          <div class="num_section sq_6 ln_9"></div>
+        </div>
+        <div class="section" id="6">
+          <div class="num_section sq_4 ln_1"></div>
+          <div class="num_section sq_4 ln_2"></div>
+          <div class="num_section sq_4 ln_3"></div>
+          <div class="num_section sq_5 ln_4"></div>
+          <div class="num_section sq_5 ln_5"></div>
+          <div class="num_section sq_5 ln_6"></div>
+          <div class="num_section sq_6 ln_7"></div>
+          <div class="num_section sq_6 ln_8"></div>
+          <div class="num_section sq_6 ln_9"></div>
+        </div>
+        <div class="section" id="7">
+          <div class="num_section sq_7 ln_1"></div>
+          <div class="num_section sq_7 ln_2"></div>
+          <div class="num_section sq_7 ln_3"></div>
+          <div class="num_section sq_8 ln_4"></div>
+          <div class="num_section sq_8 ln_5"></div>
+          <div class="num_section sq_8 ln_6"></div>
+          <div class="num_section sq_9 ln_7"></div>
+          <div class="num_section sq_9 ln_8"></div>
+          <div class="num_section sq_9 ln_9"></div>
+        </div>
+        <div class="section" id="8">
+          <div class="num_section sq_7 ln_1"></div>
+          <div class="num_section sq_7 ln_2"></div>
+          <div class="num_section sq_7 ln_3"></div>
+          <div class="num_section sq_8 ln_4"></div>
+          <div class="num_section sq_8 ln_5"></div>
+          <div class="num_section sq_8 ln_6"></div>
+          <div class="num_section sq_9 ln_7"></div>
+          <div class="num_section sq_9 ln_8"></div>
+          <div class="num_section sq_9 ln_9"></div>
+        </div>
+        <div class="section" id="9">
+          <div class="num_section sq_7 ln_1"></div>
+          <div class="num_section sq_7 ln_2"></div>
+          <div class="num_section sq_7 ln_3"></div>
+          <div class="num_section sq_8 ln_4"></div>
+          <div class="num_section sq_8 ln_5"></div>
+          <div class="num_section sq_8 ln_6"></div>
+          <div class="num_section sq_9 ln_7"></div>
+          <div class="num_section sq_9 ln_8"></div>
+          <div class="num_section sq_9 ln_9"></div>
+        </div>
+        <div class="blockPause"></div>
+      </div>
+      <div class="winner">
+        <div class="tittle_winner"></div>
+      </div>
+      <div class="game_control">
+        <div class="errors">
+          <span> Ошибок: </span>
+          <span class="cout_errors">0</span>
+          <span>/ 3 </span>
+        </div>
+        <div class="clav">
+          <button>1</button>
+          <button>2</button>
+          <button>3</button>
+          <button>4</button>
+          <button>5</button>
+          <button>6</button>
+          <button>7</button>
+          <button>8</button>
+          <button>9</button>
+        </div>
+        <button class="newgame">Новая игра</button>
+      </div>
+    </div>
+    <div class="wraper_popap-endgame">
+      <div class="popap">
+        <h2 class="popa_tittle">Игра окончена</h2>
+        <p class="popap_discription">
+          Вы сделали 3 ошибки и проиграли в этой игре
+        </p>
+        <button class="restart_game">Второй шанс</button>
+        <button class="newgame">Новая игра</button>
+      </div>
+    </div>
+    <div class="wraper_popap-level">
+      <div class="popap">
+        <h3 class="popa_tittle">Выбирите уровень сложности</h3>
+        <button class="difficulty_level easy">Лёгкий</button>
+        <button class="difficulty_level medium">Средний</button>
+        <button class="difficulty_level hard">Тяжёлый</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
